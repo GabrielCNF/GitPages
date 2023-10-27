@@ -6,7 +6,8 @@ const searchRecipesButton = document.getElementById('search-recipes');
 const recipeList = document.getElementById('recipe-list');
 
 addIngredientButton.addEventListener('click', () => {
-    if(ingredientContainer != null || ingredientContainer != undefined){
+    console.log(ingredientContainer.data);
+    if(ingredientContainer.data != null || ingredientContainer.data != undefined){
         const inputElement = document.createElement('input');
         inputElement.type = 'text';
         inputElement.classList.add('ingredient-input');
