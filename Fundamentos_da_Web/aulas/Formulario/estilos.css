@@ -1,0 +1,57 @@
+.cinza{
+    background-color: gray;
+    height: 50px;
+    display: flex;
+}
+
+h3 {
+    color: grey;
+    margin-left: 50px;
+    font: italic;
+}
+
+h1 {
+    margin-left: 50px;
+}
+
+.formItem {
+    display: flex;
+    margin: 20px 0;
+    font-style: serif;
+}
+
+.formItem input {
+    width: 350px;
+    font-style: italic;
+    border-radius: 5px;
+}
+
+.formItem textarea {
+    width: 350px;
+    font-style: italic;
+    border-radius: 5px;
+}
+
+.formItem input[type=submit] {
+    background-color: green;
+    font-weight: bold;
+    width: 100px;
+    border-radius: 25px;
+}
+
+.formItem input[type=reset] {
+    background-color: white;
+    font-weight: bold;
+    width: 100px;
+    border-radius: 25px;
+}
+
+.formItem select {
+    width: 350px;
+    font-style: italic;
+    border-radius: 5px;
+}
+
+form {
+    background-color: darkgrey;
+}

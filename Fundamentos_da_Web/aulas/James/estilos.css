@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap");
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 5 5 10 10;
+    padding: 0;
+    background-color: #00212d;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+}
+
+header h1{
+    color:white
+}
+
+nav ul li{
+    display: inline-block;
+    margin: 20px;
+    color: white;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+ul li:first-child a {
+    color:#43a4cb
+}
+
+main {
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: white;
+    padding-top: 2%;
+    padding-right: 2%;
+    padding-left: 2%;
+}
+
+main section{
+    background-color: white;
+    color: white;
+}
+
+section.banner{
+    background-image: url("img/surf.png");
+    height: 300px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 20px;
+}
+
+section h1{
+    font-size: 50px;
+    font-weight: 400;
+    font-family: 'Roboto Condensed';
+}
+
+.subtitle{
+    font-size: 10px;
+    color: white;
+    font-weight: 400;
+    font-family: 'Roboto Condensed';
+}
+
+section.portfolio h3{
+    font-weight: 400;
+    font-size: 300;
+    margin-left: 5%;
+}
+
+section.portfolio p{
+    font-weight: 400;
+    font-size: 300;
+    color: white;                     
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+section.portfolio{
+    margin-top: 3%;
+    display: flex;
+    width: 100%;
+    background-size: 100%;
+}
+
+section .box{
+    background-color: rgb(0, 108, 159);
+    width: 100%;
+    margin: 20px;
+    background-size: 100%;
+}
+
+.box button{
+    background: linear-gradient(to bottom, #04baec, #0280a3); /* Define your colors here */
+            border: none;
+            color: white;
+            padding: 10px 10px;
+            text-align: left;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 10px;
+            border-radius: 5px;
+            width: 100px;
+            margin-left: 5%;
+            margin-bottom: 5%;
+}
+
+section.testimonials{
+    display: flex;
+}
+
+section article p{
+    align-items: end;
+    flex-direction: column;
+}
+
+.testimonials article {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+section.testimonials h3{
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+section.testimonials img{
+    max-width: 50%;
+    max-height: 70%;
+    object-fit: fill;
+    position: relative;
+    z-index: 1;
+}
+
+.testimonials article p{
+    max-width: 50%;
+    max-height: 70%;
+    object-fit: fill;
+    position: relative;
+    z-index: 0;
+}
+
+/* .testimonials article{
+    display: flex;
+    flex-direction: column;
+} */
+
+.testimonials article:not([class]){
+    display: flex;
+    flex-direction: column;
+}
+
+/* article h3:first-child{
+    order: -1
+} */
+
+.article.comments {
+    position: relative;
+    z-index: 2;
+}
+
+blockquote {
+    background-color: rgb(191, 238, 255);
+    max-width: 50%;
+    max-height: 70%;
+    padding: 5%;
+    color: #00212d;
+    font-style: italic;
+    content: "” (" attr(blockquote) ") ";
+}
+
+.comments-author{
+    font-size: small;
+    margin-left: 6%;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgb(0, 33, 45);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 strong{
+    color: rgb(0, 96, 124);
+}
+
+p {
+    color: #666;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        padding: 5px;
+    }
+    h1 {
+        font-size: 24px;
+    }
+    p {
+        font-size: 16px;
+    }
+}

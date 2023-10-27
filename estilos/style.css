@@ -1,0 +1,68 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+body{
+    font-family: arial;
+}
+
+input#check{
+    visibility: hidden;
+}
+
+input[type="checkbox"]:checked ~nav{
+    transform: translateX(350px);
+}
+
+nav{
+    background-color: rgba(52, 52, 54);
+    width: 350px;
+    left: -350px;
+    height: 100%;
+    position: absolute;
+}
+
+a:hover{
+    background-color: rgb(91, 91, 95);
+    color: white;
+    border-radius: 10%;
+}
+
+label{
+    position: absolute;
+    padding: 10px;
+    margin-top: 2%;
+    font-size: 30px;
+    z-index: 1;
+    background-color: white;
+    border-radius: 25%;
+}
+
+ul{
+    top: 70px;
+    position: absolute;
+    width: 100%;
+}
+header{
+    background-color: rgb(34, 34, 152);
+}
+h1{
+    margin-left: 40%;
+    margin-right: 40%;
+    color: white;
+}
+
+.meio{
+    margin-left: 40%;
+    position: absolute;
+}
+
+ul li{
+    text-decoration: none;
+}

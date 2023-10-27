@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Fundamentos da Web</h1>
+    <h3>Exercícios</h3>
+    <link href="estilos.css" rel="stylesheet">
+
+    <div class="cinza">
+        <a href="IndexForm.html">Retornar</a>
+    </div>
+    <br />
+    <fieldset>
+        <legend>Cadastro de livros</legend>
+        <form action="cadastrar" method="post">
+            <br />
+            <div class="formItem">
+                <label for="titulo" aria-placeholder="Digite seu titulo"><strong>Título</strong>:</label>
+                <textarea id="titulo" name="titulo" rows="1" cols="50"></textarea>
+            </div>
+            <br />
+            
+            <div class="formItem">
+                <label for="descricao" aria-placeholder="Digite o descricao"><strong>Descrição:</strong></label>
+                <textarea id="descricao" name="descricao" rows="3" cols="50"></textarea>
+            </div>
+            <br/>
+
+            <div class="formItem">
+                <label for="autores" aria-placeholder="Digite o autores"><strong>Autores:</strong></label>
+                <textarea id="autores" name="autores" rows="1" cols="50"></textarea>
+            </div>
+            <br/>
+
+            <label for="Estilo"><strong>Estilo:</strong></label>
+            <select id="estilo" name="estilo">
+                <option value="">Selecione um estilo</option>
+                <option value="Academico">Acadêmico</option>
+            </select>
+            <br />
+            <br />
+
+            <div>
+                <input type="submit" value="Adicionar" />
+                <input type="reset" value="Limpar" />
+            </div>
+        </form>
+        <br />
+    </fieldset>
+
+</body>
+</html>

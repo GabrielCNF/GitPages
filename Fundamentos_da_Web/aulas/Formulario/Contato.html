@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos da Web</title>
+</head>
+
+<body>
+    <h1>Fundamentos da Web</h1>
+    <h3>Exercícios</h3>
+    <link href="estilos.css" rel="stylesheet">
+
+    <div class="cinza">
+        <a href="IndexForm.html">Retornar</a>
+    </div>
+    <br />
+    <form action="http://httpbin.org/post" method="post">
+        <fieldset>
+            <legend>Entre em Contato Conosco!</legend>
+
+            <div class="formItem">
+                <label for="nome" ><strong>Nome</strong>:</label>
+                <input pattern="[A-Za-z0-9]+" id="nome" name="nome" rows="1" cols="50" placeholder="Digite seu nome" required="true"/>
+            </div>
+            
+            <div class="formItem">
+                <label for="assunto" ><strong>Assunto:</strong></label>
+                <input id="assunto" name="assunto" rows="1" cols="50" placeholder="Digite o Assunto"/>
+            </div>
+
+            <div class="formItem">
+                <label for="data" ><strong>Data da Ocorrencia:</strong></label>
+                <input type="date"/>
+            </div>
+
+            <div class="formItem">
+                <label for="foto"><strong>Foto da Ocorrência:</strong></label>
+                <input type="file">
+            </div>
+
+            <div class="formItem">
+                <label for="telefone" ><strong>Telefone:</strong></label>
+                <input id="telefone" name="telefone" rows="1" cols="50" placeholder="Digite seu Telefone">
+            </div>
+
+            <div class="formItem">
+                <label for="email" ><strong>E-mail:</strong></label>
+                <input id="email" name="email" rows="1" cols="50" placeholder="Digite seu E-mail"
+                required="true">
+            </div>
+
+            <div class="formItem">
+                <label for="mensagem" ><strong>Mensagem:</strong></label>
+                <textarea id="mensagem" name="mensagem" rows="3" cols="50" placeholder="Digite sua Mensagem"></textarea>
+            </div>
+            
+            <div class="formItem">
+                <label for="Estilo"><strong>Estilo:</strong></label>
+                <select id="estilo" name="estilo">
+                    <option value="">Selecione um estilo</option>
+                    <option value="Academico">Acadêmico</option>
+                </select>
+            </div>
+
+            <div class="formItem">
+                <label for="pais"><strong>Selecione um País:</strong></label>
+                <select id="pais" name="pais">
+                    <option value="">Selecione um país</option>
+                    <option value="Canada">Canadá</option>
+                    <option value="USA">Estados Unidos</option>
+                    <option value="Brasil">Brasil</option>
+                    <option value="Outro">Outro</option>
+                </select>
+                <br>
+            </div>
+            <div class="formItem">
+                <label for="Obs"><strong>Observações:</strong></label>
+                <textarea name="Obs" id="Obs" cols="40" rows="3"></textarea>
+            </div>
+            <div class="formItem">
+                <input type="submit" value="Confirmar" />
+                <input type="reset" value="Limpar" />
+            </div>
+        
+        </fieldset>
+    </form>
+
+</body>
+</html>

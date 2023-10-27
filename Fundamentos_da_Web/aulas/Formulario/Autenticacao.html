@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1>Fundamentos da Web</h1>
+        <h3>Exercicios</h3>
+    </div>
+    <div class="cinza">
+        <a href="index.html">Retornar</a>
+    </div>
+    <br>
+    <fieldset>
+        <legend>Entre Em contato Conosco!</legend>
+        <form action="http://httpbin.org/post" method="post">
+
+            <link href="estilos.css" rel="stylesheet">
+            
+            <br />
+            <div class="formItem">
+                <label for="login" ><strong>Login</strong>:</label>
+                <input type="text" required="true" id="login" name="login" placeholder="Digite o login"/>
+            </div>
+            <br />
+            
+            <div class="formItem">
+                <label for="senha"><strong>Senha:</strong></label>
+                <input type="password" required="true" id="senha" name="senha" rows="1" cols="50" placeholder="Digite o senha"/>
+            </div>
+            <br/>
+            <div>
+                <input type="submit" value="Login" />
+            </div>
+        </form>
+        <br />
+    </fieldset>
+
+</body>
+</html>

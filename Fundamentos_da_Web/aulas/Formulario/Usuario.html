@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos da Web</title>
+</head>
+
+<body>
+    <h1>Fundamentos da Web</h1>
+    <h3>Exercícios</h3>
+    <link href="estilos.css" rel="stylesheet">
+
+    <div class="cinza">
+        <a href="IndexForm.html">Retornar</a>
+    </div>
+    <br />
+    <form action="http://httpbin.org/post" method="post">
+        <fieldset>
+            <legend>Entre em Contato Conosco!</legend>
+
+            <div class="formItem">
+                <label for="nome" ><strong>Nome</strong>:</label>
+                <input for="nome" type="text" required="true" placeholder="Digite seu nome">
+            </div>
+            
+            <div class="formItem">
+                <label for="idade" ><strong>Idade:</strong></label>
+                <input type="number" pattern="[0-9]" placeholder="Digite a idade" min="1" max="5">
+            </div>
+
+            <div><strong>Gênero</strong>
+                <br>
+                <input type="radio" id="masculino" name="genero" value="Masculino">
+                <label for="masculino">Masculino</label>
+                <br>
+                <input type="radio" id="feminino" name="genero" value="feminino">
+                <label for="feminino">Feminino</label>
+                <br>
+                <input type="radio" id="outros" name="genero" value="outros">
+                <label for="outros">Outros</label>
+                <br>
+                
+            </div>
+
+            <div class="formItem">
+                <label for="email" ><strong>E-mail:</strong></label>
+                <input type="email" required="true" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="Digite o seu E-mail">
+            </div>
+
+            <div class="formItem">
+                <label for="senha" ><strong>Senha:</strong></label>
+                <input type="password" placeholder="Digite seu senha">
+            </div>
+
+            <div>
+                <input type="submit" value="Confirmar" />
+            </div>
+        
+        </fieldset>
+    </form>
+
+</body>
+</html>
