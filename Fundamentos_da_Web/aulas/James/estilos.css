@@ -213,3 +213,46 @@ p {
         font-size: 16px;
     }
 }
+
+@media screen and (max-width: 800px) {
+    nav {
+      display: none;
+    }
+  
+    main {
+      padding: 10px;
+      margin: auto;
+    }
+  
+    .banner {
+      text-align: center;
+    }
+  
+    .portfolio {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  
+    .testimonials {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .testimonials h3 {
+      text-align: center;
+    }
+  
+    .testimonials article:first-child {
+      display: block;
+      margin-bottom: 10px;
+    }
+  
+    .testimonials article:first-child p a {
+      text-align: right;
+    }
+  
+    .comments p {
+      text-align: right;
+    }
+  }

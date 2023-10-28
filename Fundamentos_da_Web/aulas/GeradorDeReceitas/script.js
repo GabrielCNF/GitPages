@@ -1,30 +1,27 @@
-const ingredientContainer = document.querySelector('.ingredient-container');
-const addIngredientButton = document.getElementById('add-ingredient');
-// const searchRecipesButton = document.getElementById('search-recipes');
-// const recipeList = document.getElementById('recipe-list');
 const searchRecipesButton = document.getElementById('search-recipes');
 const recipeList = document.getElementById('recipe-list');
 
+const addIngredientButton = document.getElementById('add-ingredient');
+const ingredientContainer = document.querySelector('.ingredient-container');
+
 addIngredientButton.addEventListener('click', () => {
-    console.log(ingredientContainer.data);
-    if(ingredientContainer.data != null || ingredientContainer.data != undefined){
+    const existingInputs = ingredientContainer.querySelectorAll('.ingredient-input');
+
+    if (existingInputs.length === 0 || existingInputs[existingInputs.length - 1].value.trim() !== "") {
         const inputElement = document.createElement('input');
         inputElement.type = 'text';
         inputElement.classList.add('ingredient-input');
         inputElement.placeholder = 'Diga outro ingrediente';
         ingredientContainer.appendChild(inputElement);
-    }
-    else{
-        alert("Escreva um ingrediente no campo")
+    } else {
+        alert("Escreva um ingrediente no campo");
     }
 });
 
 searchRecipesButton.addEventListener('click', () => {
-    // const searchQuery = document.getElementById('search-query').value;
     
-    // Use the Google Custom Search API to fetch search results
-    const apiKey = 'YOUR_API_KEY'; // Replace with your actual API key
-    const cx = 'YOUR_CUSTOM_SEARCH_ENGINE_ID'; // Replace with your custom search engine ID
+    const apiKey = 'YOUR_API_KEY'; 
+    const cx = 'YOUR_CUSTOM_SEARCH_ENGINE_ID';
     const url = `https://www.googleapis.com/customsearch/v1?q=${searchQuery}&key=${apiKey}&cx=${cx}`;
 
     // Clear the recipe list
@@ -39,7 +36,7 @@ searchRecipesButton.addEventListener('click', () => {
                     const link = document.createElement('a');
                     link.href = item.link;
                     link.textContent = item.title;
-                    link.target = '_blank'; // Open link in a new tab
+                    link.target = '_blank'; 
                     recipeList.appendChild(link);
                     console.log(link.textContent)
                 });
